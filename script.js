@@ -26,7 +26,7 @@ const scroll = new LocomotiveScroll({
 faqOne.addEventListener("click", () => {
     if (!press1) {
         firstAns.classList.remove("hide")
-        firstAns.classList.toggle('show')
+       
     }else{
         firstAns.classList.add("hide")
     }

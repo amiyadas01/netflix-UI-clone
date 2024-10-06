@@ -17,7 +17,7 @@ let press4 = false;
 let press5 = false;
 let press6 = false;
 const scroll = new LocomotiveScroll({
-    el: document.querySelector('.wrapper'),
+    el: document.querySelector('.wraper'),
     smooth: true
 });
 

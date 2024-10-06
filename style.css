@@ -454,12 +454,7 @@
     justify-content: space-between;
     align-items: center;
     transition: opacity 0.4s ease, visibility 0.4s ease; /* Smooth transitions for opacity and visibility */
-    opacity: 0; /* Initially hidden */
-    visibility: hidden; 
-}
-.first-ans.show {
-    opacity: 1; /* Fades the element in */
-    visibility: visible; /* Makes the element visible */
+     
 }
 
 .second-ans {
@@ -522,7 +517,9 @@
     align-items: center;
 }
 
-
+.hide {
+    display: none;
+}
 
 .main .last-sec .div-button {
     padding: 25px 0px 35px 0px;

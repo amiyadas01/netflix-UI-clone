@@ -1,0 +1,32 @@
+@mixin flexBox($jc,$al,$direc) {
+    display: flex;
+    @if $jc !=null{
+        justify-content: $jc;
+    }
+    @if $al !=null{
+       align-items: $al;  
+    }
+    @if $direc !=null{
+      flex-direction: $direc;   
+    }
+}
+@mixin ansCode{
+    padding: 1.3rem;
+    width: 71.80vw;
+    background: #55535388;
+    border: none;
+    color: #ffffff;
+    font-size: 1.5rem;
+    @include flexBox(space-between,center,null);
+    transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+@mixin listCode{
+    gap: 20px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+@mixin aCode{
+    color: rgba(255, 255, 255, 0.7);
+    cursor: help;
+}

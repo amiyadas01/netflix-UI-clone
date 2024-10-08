@@ -381,25 +381,17 @@
 }
 .main .last-sec .div-button .FAQ-button .FAQ-svg {
   cursor: pointer;
+  transition: transform 0.3s ease;
 }
 .main .last-sec .div-button .FAQ-button .FAQ-svg:hover {
   transform: scale(1.17);
   /* background: #75757588; */
   /* color: #ffffff44; */
 }
-.main .last-sec .div-button .first-ans {
-  padding: 1.3rem;
-  width: 71.8vw;
-  background: rgba(85, 83, 83, 0.5333333333);
-  border: none;
-  color: #ffffff;
-  font-size: 1.5rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  transition: opacity 0.4s ease, visibility 0.4s ease;
+.main .last-sec .div-button .FAQ-button .rotate {
+  transform: rotate(45deg);
 }
-.main .last-sec .div-button .second-ans {
+.main .last-sec .div-button .FAQ-ans {
   padding: 1.3rem;
   width: 71.8vw;
   background: rgba(85, 83, 83, 0.5333333333);
@@ -409,55 +401,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transition: opacity 0.4s ease, visibility 0.4s ease;
-}
-.main .last-sec .div-button .third-ans {
-  padding: 1.3rem;
-  width: 71.8vw;
-  background: rgba(85, 83, 83, 0.5333333333);
-  border: none;
-  color: #ffffff;
-  font-size: 1.5rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  transition: opacity 0.4s ease, visibility 0.4s ease;
-}
-.main .last-sec .div-button .fourth-ans {
-  padding: 1.3rem;
-  width: 71.8vw;
-  background: rgba(85, 83, 83, 0.5333333333);
-  border: none;
-  color: #ffffff;
-  font-size: 1.5rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  transition: opacity 0.4s ease, visibility 0.4s ease;
-}
-.main .last-sec .div-button .fifth-ans {
-  padding: 1.3rem;
-  width: 71.8vw;
-  background: rgba(85, 83, 83, 0.5333333333);
-  border: none;
-  color: #ffffff;
-  font-size: 1.5rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  transition: opacity 0.4s ease, visibility 0.4s ease;
-}
-.main .last-sec .div-button .sixth-ans {
-  padding: 1.3rem;
-  width: 71.8vw;
-  background: rgba(85, 83, 83, 0.5333333333);
-  border: none;
-  color: #ffffff;
-  font-size: 1.5rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  transition: opacity 0.4s ease, visibility 0.4s ease;
 }
 .main .last-sec .div-button .hide {
   display: none;

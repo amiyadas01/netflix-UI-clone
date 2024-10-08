@@ -421,43 +421,27 @@
 
                 .FAQ-svg {
                     cursor: pointer;
-
+                    transition: transform 0.3s ease;
                     &:hover {
                         transform: scale(1.17);
                         /* background: #75757588; */
                         /* color: #ffffff44; */
                     }
+                    
+                }
+                .rotate{
+                    transform: rotate(45deg);
+                
                 }
             }
-
-            .first-ans {
+            .FAQ-ans {
                 @include ansCode;
+                
             }
-
-            .second-ans {
-                @include ansCode;
-            }
-
-            .third-ans {
-                @include ansCode;
-            }
-
-            .fourth-ans {
-                @include ansCode;
-            }
-
-            .fifth-ans {
-                @include ansCode;
-            }
-
-            .sixth-ans {
-                @include ansCode;
-            }
-
             .hide {
-                display: none;
+               display: none;
             }
-
+           
 
         }
     }

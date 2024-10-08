@@ -5,8 +5,97 @@
   cursor: default;
 }
 
+.scrolbar {
+  overflow: auto;
+  /* Adds scrollbar when necessary */
+  height: 100vh;
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 35vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7725490196);
+  position: absolute;
+  z-index: 10;
+  left: 32vw;
+  top: 7vw;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+}
+.login h1 {
+  position: absolute;
+  top: 8vh;
+  left: 10vh;
+}
+.login p a {
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+}
+.login .input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2.4vh;
+  position: absolute;
+  left: 10vh;
+  top: 20vh;
+}
+.login .input .em-pwd {
+  letter-spacing: 0px;
+  font-size: 1rem;
+  padding: 18px 105px 18px 15px;
+  border: 1px solid rgba(255, 255, 255, 0.395);
+  color: white;
+  border-radius: 3px;
+  background-color: rgba(25, 25, 25, 0.626);
+  cursor: text;
+}
+.login .input .em-pwd:hover {
+  background: rgba(0, 0, 0, 0.5647058824);
+}
+.login .input .signpage {
+  padding: 10px 135px;
+}
+.login .checkbox {
+  position: absolute;
+  left: 10vh;
+  bottom: 38vh;
+}
+.login .para-2 {
+  position: absolute;
+  left: 10vh;
+  bottom: 33vh;
+  color: rgba(235, 235, 235, 0.7411764706);
+}
+.login .para-2 a {
+  text-decoration: none;
+}
+.login .para-3 {
+  position: absolute;
+  left: 10vh;
+  bottom: 10vh;
+  color: rgba(235, 235, 235, 0.5411764706);
+  font-size: 0.8rem;
+}
+.login .para-3 a {
+  text-decoration: none;
+  color: rgb(25, 25, 254);
+}
+
 .header {
   position: relative;
+  height: 110vh;
+  overflow: hidden;
+}
+.header .saddow-2 {
+  background-color: rgba(0, 0, 0, 0.4784313725);
+  position: absolute;
+  width: 100vw;
   height: 110vh;
   overflow: hidden;
 }
@@ -59,6 +148,10 @@
   /* background: #ff00007b; */
   transform: scale(1.03);
   /* color: #ffffff53; */
+}
+.red-btn a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
 }
 
 .selectbox {
@@ -409,7 +502,7 @@
 .footer {
   color: rgba(255, 255, 255, 0.7);
   background: #000;
-  height: 100vh;
+  max-height: 100vh;
 }
 .footer .all-list {
   font-weight: 500;

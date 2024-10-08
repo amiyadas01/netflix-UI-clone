@@ -14,14 +14,17 @@ faqBtn.forEach((item, index) => {
             } else {
                 answer.classList.add("hide");
             }
-            
+
         })
-        faqSvg.forEach((svg,svgIdx) => {
+        faqSvg.forEach((svg, svgIdx) => {
             if (index === svgIdx) {
                 svg.classList.toggle("rotate");
             } else {
                 svg.classList.remove("rotate");
             }
-                        })
+        })
+        setTimeout(() => {
+            document.body.style.height = document.body.scrollHeight + 'px';
+        }, 300);
     })
 })

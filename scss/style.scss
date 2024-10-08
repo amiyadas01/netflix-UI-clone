@@ -7,10 +7,107 @@
     cursor: default;
 }
 
+.scrolbar {
+    overflow: auto;
+    /* Adds scrollbar when necessary */
+    height: 100vh;
+}
+
+.login {
+    @include flexBox(center, center, column);
+    width: 35vw;
+    height: 100vh;
+    background: #000000c5;
+    position: absolute;
+    z-index: 10;
+    left: 32vw;
+    top: 7vw;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+
+    h1 {
+        position: absolute;
+        top: 8vh;
+        left: 10vh;
+    }
+
+    p a {
+        color: #ffffff;
+        font-family: "Open Sans", sans-serif;
+    }
+
+    .input {
+        @include flexBox(center, center, column);
+        gap: 2.4vh;
+        position: absolute;
+        left: 10vh;
+        top: 20vh;
+
+        .em-pwd {
+            letter-spacing: 0px;
+            font-size: 1rem;
+            padding: 18px 105px 18px 15px;
+            border: 1px solid rgba(255, 255, 255, 0.395);
+            color: white;
+            border-radius: 3px;
+            background-color: rgba(25, 25, 25, 0.626);
+            cursor: text;
+
+            &:hover {
+                background: #00000090;
+            }
+        }
+
+        .signpage {
+            padding: 10px 135px, ;
+        }
+    }
+
+    .checkbox {
+        position: absolute;
+        left: 10vh;
+        bottom: 38vh;
+    }
+
+    .para-2 {
+        position: absolute;
+        left: 10vh;
+        bottom: 33vh;
+        color: #ebebebbd;
+
+        a {
+            text-decoration: none;
+
+        }
+    }
+
+    .para-3 {
+        position: absolute;
+        left: 10vh;
+        bottom: 10vh;
+        color: #ebebeb8a;
+        font-size: 0.8rem;
+
+        a {
+            text-decoration: none;
+            color: rgb(25, 25, 254);
+        }
+    }
+}
+
 .header {
     position: relative;
     height: 110vh;
     overflow: hidden;
+
+    .saddow-2 {
+        background-color: #0000007a;
+        position: absolute;
+        width: 100vw;
+        height: 110vh;
+        overflow: hidden;
+
+    }
 
     .saddow {
         background-image: linear-gradient(rgba(0, 0, 0, 0.837), rgba(0, 0, 0, 0.47), rgba(0, 0, 0, 0.826));
@@ -64,6 +161,11 @@
         /* background: #ff00007b; */
         transform: scale(1.03);
         /* color: #ffffff53; */
+    }
+
+    a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
     }
 
 }
@@ -422,26 +524,30 @@
                 .FAQ-svg {
                     cursor: pointer;
                     transition: transform 0.3s ease;
+
                     &:hover {
                         transform: scale(1.17);
                         /* background: #75757588; */
                         /* color: #ffffff44; */
                     }
-                    
+
                 }
-                .rotate{
+
+                .rotate {
                     transform: rotate(45deg);
-                
+
                 }
             }
+
             .FAQ-ans {
                 @include ansCode;
-                
+
             }
+
             .hide {
-               display: none;
+                display: none;
             }
-           
+
 
         }
     }
@@ -451,7 +557,7 @@
 .footer {
     color: rgba(255, 255, 255, 0.7);
     background: #000;
-    height: 100vh;
+    max-height: 100vh;
 
     .all-list {
         font-weight: 500;

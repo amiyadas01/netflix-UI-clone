@@ -502,7 +502,7 @@
 .footer {
   color: rgba(255, 255, 255, 0.7);
   background: #000;
-  max-height: 100vh;
+  height: 70vh;
 }
 .footer .all-list {
   font-weight: 500;

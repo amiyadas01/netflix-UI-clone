@@ -1,6 +1,7 @@
 const faqBtn = document.querySelectorAll(".FAQ-button");
 const faqAns = document.querySelectorAll(".FAQ-ans")
 const faqSvg = document.querySelectorAll(".FAQ-svg")
+const footer = document.querySelector(".footer")
 const scroll = new LocomotiveScroll({
     el: document.querySelector('.wraper'),
     smooth: true
@@ -25,6 +26,8 @@ faqBtn.forEach((item, index) => {
         })
         setTimeout(() => {
             document.body.style.height = document.body.scrollHeight + 'px';
+            footer.style.height = "200vh";
         }, 300);
+        
     })
 })

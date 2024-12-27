@@ -1,11 +1,23 @@
 const faqBtn = document.querySelectorAll(".FAQ-button");
-const faqAns = document.querySelectorAll(".FAQ-ans")
-const faqSvg = document.querySelectorAll(".FAQ-svg")
-const footer = document.querySelector(".footer")
-const scroll = new LocomotiveScroll({
-    el: document.querySelector('.wraper'),
-    smooth: true
+const faqAns = document.querySelectorAll(".FAQ-ans");
+const faqSvg = document.querySelectorAll(".FAQ-svg");
+const footer = document.querySelector(".footer");
+const video = document.getElementById('loadingVideo');
+const netflixClone = document.querySelector('.netflixClone');
+
+document.body.style.overflow = "hidden";
+
+video.addEventListener('ended', () => {
+    // Hide the loading animation
+    video.classList.toggle("hide")
+
+    // Show the Netflix clone
+    netflixClone.classList.add('show');
+
+    // Enable scrolling
+    document.body.style.overflow = "auto";
 });
+
 
 faqBtn.forEach((item, index) => {
     item.addEventListener("click", () => {
@@ -15,19 +27,14 @@ faqBtn.forEach((item, index) => {
             } else {
                 answer.classList.add("hide");
             }
-
-        })
+        });
         faqSvg.forEach((svg, svgIdx) => {
             if (index === svgIdx) {
                 svg.classList.toggle("rotate");
             } else {
                 svg.classList.remove("rotate");
             }
-        })
-        setTimeout(() => {
-            document.body.style.height = document.body.scrollHeight + 'px';
-            footer.style.height = "200vh";
-        }, 300);
-        
-    })
-})
+        });
+       
+    });
+});

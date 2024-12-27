@@ -6,11 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix India – Watch TV Shows Online, Watch Movies Online</title>
     <link rel="stylesheet" href="scss/style.css" class="css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.css">
+  
 </head>
 
 <body>
-    <div class="wraper">
+    
+    <video id="loadingVideo" autoplay muted>
+        <source src="./assets/loading.mp4" type="video/mp4">
+        Sorry, your browser doesn't support the video format. Please update your browser or use a supported one.
+      </video>
+
+    <div class="netflixClone">
     <header class="header">
 
         <img alt="" aria-hidden="true" data-uia="nmhp-card-hero+background+image"
@@ -217,7 +223,8 @@
     </div>
     </footer>
 </div>
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.js"></script>
+</div>
+
 <script src="script.js"></script>
 </body>
 
